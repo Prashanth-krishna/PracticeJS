@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Exchange Rate Calculator</h2>
+        <p>Check the exchange rates by selecting the currencies.</p>
+        <div class="currency">
+            <select id="currency-one" class="currecy">
+                <option value="USD" selected>USD</option>
+                <option value="EUR">EUR</option>
+                <option value="ZAR" selected>ZAR</option>
+            </select>
+            <input type="number" class="cur-one" id="cur-one" value="1">
+        </div>
+        <div class="btnandlabel">
+
+        
+            <button class="btn" id="swap">Swap</button>
+            <label id="rate" class="rate"></label>
+        </div>
+        <div class="currency">
+            <select id="currency-two" class="currecy">
+                <option value="USD">USD</option>
+                <option value="EUR" selected>EUR</option>
+                <option value="ZAR" >ZAR</option>
+            </select>
+            <input type="number" class="cur-two" id="cur-two" >
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

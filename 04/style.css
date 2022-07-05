@@ -1,0 +1,55 @@
+:root{
+    --primary-color:teal;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+h2{
+    color: var(--primary-color);
+    text-align: center;
+    
+}
+p{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+select{
+    
+    padding: 5px 10px;
+    font-size: 16px;
+    margin: 10px 10px;
+}
+input{
+    font-size: 16px;
+    text-align: right;
+}
+.btn{
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 90px;
+    
+    
+}
+.rate{
+    color: var(--primary-color);
+    font-size: 16px;
+    
+}
+.btnandlabel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
