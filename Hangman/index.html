@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Hangman</h2>
+    <p>Find the hidden word - Enter a letter</p>
+    <div class="game-container">
+    <svg >
+        <line x1="100" y1="50" x2="200" y2="50"></line>
+        <line x1="200" y1="50" x2="200" y2="80"></line>
+        <line x1="100" y1="50" x2="100" y2="350"></line>
+        <line x1="70" y1="350" x2="130" y2="350"></line>
+
+        <!-- head  -->
+        <circle cx="200" cy="110" r="30" class="figure"></circle>
+        <!-- body  -->
+        <line x1="200" y1="140" x2="200" y2="240" class="figure"></line>
+        <!-- arms -->
+        <line x1="200" y1="200" x2="170" y2="170" class="figure"></line>
+        <line x1="200" y1="200" x2="230" y2="170" class="figure"></line>
+        <!-- legs -->
+        <line x1="200" y1="240" x2="170" y2="270" class="figure"></line>
+        <line x1="200" y1="240" x2="230" y2="270" class="figure"></line>
+
+        <div class="wrong-letters-container" id="wrong-letters-container">
+            
+        </div>
+        <div class="word" id="word">
+            
+        </div>
+    </svg>
+</div>
+    
+
+    <div class="popup-container" id="popup-container">
+        <div class="popup">
+            <h2 id="final-message"></h2>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+
+    <div class="notification" id="notification">
+        <p>You have already entered this letter</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

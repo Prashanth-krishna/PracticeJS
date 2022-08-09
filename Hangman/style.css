@@ -1,0 +1,114 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(82, 78, 78, 0.274);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    margin: 0;
+    overflow: hidden;
+}
+.game-container{
+    fill: none;
+    stroke: white;
+    stroke-width: 5px;
+    stroke-linecap:round ;
+    position: relative;
+}
+svg{
+    height: 400px;
+    width: 500px;
+}
+.figure{
+    display: none;
+}
+.wrong-letters-container{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.wrong-letters-container p{
+    text-align: right;
+    font-size: 20px;
+}
+.word{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    
+}
+.letter{
+    border-bottom: 2px solid teal;
+    font-size: 30px;
+    margin-right: 5px;
+    height: 50px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup-container{
+    background-color: rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+}
+.popup{
+    text-align: center;
+    background-color: aqua;
+    padding: 50px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0  10px rgba(255, 255, 255, 1);
+
+
+}
+.popup button{
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.popup button:active{
+    transform: scale(0.95);
+}
+.popup button:focus{
+    outline: none;
+}
+.notification{
+    background-color:rgba(0, 0, 0, 0.1) ;
+    border-radius: 10px 10px 0 0;
+    padding: 10px 10px;
+    color: wheat;
+    font-size: 20px;
+    position: absolute;
+    bottom: -50px;
+    transition: transform 0.3s ease-in-out;
+}
+.notification p{
+    margin: 0;
+}
+.notification.show{
+    transform: translateY(-50px);
+}
+.testbutton{
+    height: 50px;
+    width: 200px;
+}
+.testbutton button:active{
+    transform: scale(0.95);
+}
