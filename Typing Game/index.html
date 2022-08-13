@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Typing Game</title>
+</head>
+<body>
+    <div class="settings-button" >
+        <button id="settings-button">&#9965</button>
+    </div>
+    <div class="difficulty-container" id="difficulty-container">
+        <label for="difficulty">Difficulty</label>
+        <select  id="difficulty" class="difficulty">
+            <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
+        </select>
+    </div>
+    <div class="game-container">
+        <h2>Typing Game</h2>
+        <p>Type the word...</p>
+        <div class="word-container" id="word-contaniner">
+            <h1>TEST</h1>
+        </div>
+        
+        <input type="text" id="text" class="text">
+        <h4 id="time">Time Remaining : 10s</h4>
+        <h3 id="score">Score : 0</h3>
+    </div>
+
+    <div class="game-end-container" id="game-end-container">
+        <div class="game-end" id="game-end">
+            
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
